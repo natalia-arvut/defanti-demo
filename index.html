@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hotel Ristorante Defanti — Lavorgo, Leventina, Ticino · dal 1903</title>
+<meta name="description" content="Hotel e Ristorante Defanti a gestione familiare dal 1903 a Lavorgo, Leventina, Ticino. Alloggio, cucina creativa, eventi gastronomici, offerte boulder e distributore AVIA — a 2 km dall'uscita autostradale di Faido." />
+<meta name="keywords" content="Hotel, Ristorante, Defanti, Lavorgo, Faido, Leventina, Ticino, Svizzera, Camere, Gastronomia, Slow Food, Eventi, Boulder, Benzina AVIA" />
+<meta property="og:title" content="Hotel Ristorante Defanti — Tradizione di famiglia dal 1903" />
+<meta property="og:description" content="Una grande tradizione sulla strada del San Gottardo: alloggio, ristorante, negozio e distributore di benzina. Lavorgo, Leventina, Ticino." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="it_CH" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink:    '#15212E',
+        notte:  '#0B2138',
+        azure:  '#0060A8',
+        gold:   '#B68A4E',
+        goldlt: '#C9A263',
+        cream:  '#F6F0E4',
+        paper:  '#FBF7EE',
+        line:   '#E3DAC8',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'Georgia', 'serif'],
+        body: ['Mulish', 'system-ui', 'sans-serif'],
+      },
+      maxWidth: { content: '1240px' },
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#FBF7EE; color:#15212E; font-family:'Mulish',sans-serif; -webkit-font-smoothing:antialiased; }
+  .font-display { font-family:'Fraunces',serif; }
+  .eyebrow { font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; font-weight:600; }
+  .hero-scrim { background:
+      linear-gradient(180deg, rgba(7,18,32,.58) 0%, rgba(7,18,32,.10) 24%, rgba(7,18,32,.30) 52%, rgba(7,18,32,.80) 78%, rgba(6,15,28,.96) 100%),
+      linear-gradient(90deg, rgba(7,18,32,.55) 0%, rgba(7,18,32,.18) 46%, rgba(7,18,32,0) 78%); }
+  .rule-gold { height:1px; background:linear-gradient(90deg, transparent, #B68A4E 18%, #B68A4E 82%, transparent); }
+  .reveal { opacity:0; transform:translateY(26px); transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity:1; transform:none; }
+  .link-underline { background-image:linear-gradient(#B68A4E,#B68A4E); background-size:0% 1px; background-position:0 100%; background-repeat:no-repeat; transition:background-size .4s ease; }
+  .link-underline:hover { background-size:100% 1px; }
+  .nav-item:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+  .dropdown { opacity:0; visibility:hidden; transform:translateY(8px); transition:all .25s ease; }
+  .seal { background:radial-gradient(circle at 50% 50%, #0B2138, #0B2138); }
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none} html{scroll-behavior:auto} }
+  .photo-warm { filter:saturate(1.02); }
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["LodgingBusiness","Restaurant"],
+  "name":"Hotel Ristorante Defanti",
+  "description":"Hotel e ristorante a gestione familiare dal 1903 a Lavorgo, Leventina, Ticino. Cucina creativa, eventi gastronomici, alloggio e distributore AVIA.",
+  "foundingDate":"1903",
+  "servesCuisine":["Ticinese","Slow Food","Creativa"],
+  "priceRange":"CHF 80–198",
+  "telephone":"+41 91 865 14 34",
+  "email":"defanti.hotel@bluewin.ch",
+  "address":{"@type":"PostalAddress","streetAddress":"Via Petronilla 81","postalCode":"6746","addressLocality":"Lavorgo","addressRegion":"Ticino","addressCountry":"CH"},
+  "areaServed":"Leventina, Ticino",
+  "url":"https://www.defanti.ch/"
+}
+</script>
+</head>
+<body class="font-body antialiased">
+
+<!-- ======================= HEADER ======================= -->
+<header id="top" class="fixed top-0 inset-x-0 z-50 transition-all duration-500" data-header>
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="flex items-center justify-between h-20 lg:h-[88px]">
+      <!-- Brand -->
+      <a href="#top" class="flex items-baseline gap-2.5 group">
+        <span class="font-display text-2xl lg:text-[1.7rem] font-semibold tracking-tight" data-brand>Defanti</span>
+        <span class="eyebrow text-[.6rem] hidden sm:inline opacity-70" data-brand-sub>dal 1903</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-7 text-[.82rem] font-semibold" data-nav>
+        <a href="#offerta" class="nav-link link-underline">Home</a>
+        <div class="relative nav-item">
+          <a href="#camere" class="nav-link link-underline flex items-center gap-1">Camere <span class="text-[.6rem] opacity-60">▾</span></a>
+          <div class="dropdown absolute left-0 top-full pt-3 w-48">
+            <div class="bg-notte text-cream rounded-lg shadow-2xl py-2 ring-1 ring-white/10">
+              <a href="#camere" class="block px-4 py-2 hover:bg-white/10 transition">Prezzi</a>
+              <a href="#bus" class="block px-4 py-2 hover:bg-white/10 transition">Bus e gruppi</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative nav-item">
+          <a href="#ristorante" class="nav-link link-underline flex items-center gap-1">Ristorante <span class="text-[.6rem] opacity-60">▾</span></a>
+          <div class="dropdown absolute left-0 top-full pt-3 w-52">
+            <div class="bg-notte text-cream rounded-lg shadow-2xl py-2 ring-1 ring-white/10">
+              <a href="#orari" class="block px-4 py-2 hover:bg-white/10 transition">Orari di Apertura</a>
+              <a href="#slowfood" class="block px-4 py-2 hover:bg-white/10 transition">Slow Food</a>
+              <a href="#alacarte" class="block px-4 py-2 hover:bg-white/10 transition">À la carte</a>
+            </div>
+          </div>
+        </div>
+        <a href="#boulder" class="nav-link link-underline">Boulder</a>
+        <a href="#eventi" class="nav-link link-underline">Eventi</a>
+        <a href="#rassegna" class="nav-link link-underline">Rassegna stampa</a>
+        <div class="relative nav-item">
+          <a href="#storia" class="nav-link link-underline flex items-center gap-1">dal 1903 <span class="text-[.6rem] opacity-60">▾</span></a>
+          <div class="dropdown absolute left-0 top-full pt-3 w-56">
+            <div class="bg-notte text-cream rounded-lg shadow-2xl py-2 ring-1 ring-white/10">
+              <a href="#storia" class="block px-4 py-2 hover:bg-white/10 transition">Famiglia Defanti</a>
+              <a href="#storia" class="block px-4 py-2 hover:bg-white/10 transition">Lorenzo Delmoinco</a>
+              <a href="#benzina" class="block px-4 py-2 hover:bg-white/10 transition">Stazione di Benzina</a>
+            </div>
+          </div>
+        </div>
+        <a href="#contatti" class="nav-link link-underline">Contatti</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <div class="hidden lg:flex items-center gap-2 text-[.72rem] font-semibold tracking-wide" data-lang>
+          <a class="opacity-100 underline decoration-gold underline-offset-4" href="#">IT</a>
+          <span class="opacity-30">·</span><a class="opacity-55 hover:opacity-100 transition" href="#">DE</a>
+          <span class="opacity-30">·</span><a class="opacity-55 hover:opacity-100 transition" href="#">FR</a>
+          <span class="opacity-30">·</span><a class="opacity-55 hover:opacity-100 transition" href="#">EN</a>
+        </div>
+        <a href="#contatti" class="hidden md:inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-[.78rem] font-bold text-notte hover:bg-goldlt transition shadow-sm">
+          Riservazioni
+        </a>
+        <button data-menu-btn class="lg:hidden flex flex-col gap-[5px] p-2" aria-label="Menu">
+          <span class="block w-6 h-[2px] bg-current transition-all" data-bar1></span>
+          <span class="block w-6 h-[2px] bg-current transition-all" data-bar2></span>
+          <span class="block w-6 h-[2px] bg-current transition-all" data-bar3></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div data-mobile-menu class="fixed inset-0 z-40 bg-notte text-cream translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto">
+  <div class="px-7 pt-28 pb-12 flex flex-col gap-1 text-lg font-display">
+    <a href="#offerta" class="mob-link py-3 border-b border-white/10">Home</a>
+    <a href="#camere" class="mob-link py-3 border-b border-white/10">Camere · Prezzi</a>
+    <a href="#bus" class="mob-link py-3 border-b border-white/10 pl-4 text-base opacity-80">Bus e gruppi</a>
+    <a href="#ristorante" class="mob-link py-3 border-b border-white/10">Ristorante</a>
+    <a href="#orari" class="mob-link py-3 border-b border-white/10 pl-4 text-base opacity-80">Orari di Apertura</a>
+    <a href="#slowfood" class="mob-link py-3 border-b border-white/10 pl-4 text-base opacity-80">Slow Food</a>
+    <a href="#alacarte" class="mob-link py-3 border-b border-white/10 pl-4 text-base opacity-80">À la carte</a>
+    <a href="#boulder" class="mob-link py-3 border-b border-white/10">Boulder</a>
+    <a href="#eventi" class="mob-link py-3 border-b border-white/10">Eventi</a>
+    <a href="#rassegna" class="mob-link py-3 border-b border-white/10">Rassegna stampa</a>
+    <a href="#storia" class="mob-link py-3 border-b border-white/10">dal 1903 · Famiglia Defanti</a>
+    <a href="#benzina" class="mob-link py-3 border-b border-white/10 pl-4 text-base opacity-80">Stazione di Benzina</a>
+    <a href="#contatti" class="mob-link py-3 border-b border-white/10">Contatti</a>
+    <div class="flex gap-4 mt-6 text-sm font-body tracking-widest">
+      <a href="#" class="underline decoration-gold underline-offset-4">IT</a><a href="#" class="opacity-60">DE</a><a href="#" class="opacity-60">FR</a><a href="#" class="opacity-60">EN</a>
+    </div>
+    <a href="#contatti" class="mob-link mt-6 inline-flex justify-center rounded-full bg-gold px-6 py-3 font-body font-bold text-notte">Riservazioni</a>
+  </div>
+</div>
+
+<!-- ======================= HERO ======================= -->
+<section class="relative w-full overflow-hidden" style="height:100svh;">
+  <img src="img/hero.jpg" alt="Albergo Ristorante Defanti a Lavorgo, Leventina, immerso nel verde della valle ticinese" class="absolute inset-0 w-full h-full object-cover" style="object-position:60% 50%;" fetchpriority="high" />
+  <div class="absolute inset-0 hero-scrim"></div>
+
+  <div class="relative h-full mx-auto max-w-content px-5 lg:px-8 flex flex-col justify-end pb-12 lg:pb-16">
+    <div class="max-w-2xl text-cream">
+      <p class="eyebrow text-goldlt mb-4" style="text-shadow:0 2px 14px rgba(0,0,0,.5)">Lavorgo · Leventina · Ticino</p>
+      <h1 class="font-display font-semibold leading-[.94] text-[2.7rem] sm:text-6xl lg:text-[4.7rem]" style="text-shadow:0 4px 28px rgba(0,0,0,.55)">
+        Hotel Ristorante<br><span class="italic text-goldlt">Defanti</span>
+      </h1>
+      <div class="flex items-center gap-4 mt-5 mb-5">
+        <span class="rule-gold w-14"></span>
+        <span class="font-display italic text-lg lg:text-2xl text-cream/95" style="text-shadow:0 2px 14px rgba(0,0,0,.5)">Tradizione di famiglia dal 1903</span>
+      </div>
+      <p class="text-cream/90 text-[.98rem] lg:text-lg leading-relaxed max-w-xl" style="text-shadow:0 2px 14px rgba(0,0,0,.6)">
+        Alloggio, ristorante, negozio e distributore di benzina: un'offerta completa sulla strada del
+        San Gottardo, a 2 km dall'uscita autostradale di Faido.
+      </p>
+      <div class="flex flex-wrap items-center gap-3.5 mt-7">
+        <a href="#contatti" class="inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-bold text-notte hover:bg-goldlt transition shadow-lg">
+          Riserva il tuo tavolo o camera
+        </a>
+        <a href="#ristorante" class="inline-flex items-center gap-2 rounded-full border border-cream/50 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-cream/10 transition backdrop-blur-sm">
+          Scopri il ristorante
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- scroll hint -->
+  <div class="absolute bottom-6 right-8 hidden lg:flex items-center gap-3 text-cream/70 text-xs tracking-widest uppercase">
+    <span>Scorri</span><span class="w-10 rule-gold"></span>
+  </div>
+</section>
+
+<!-- ======================= INTRO / OFFERTA COMPLETA ======================= -->
+<section id="offerta" class="bg-paper py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <div class="lg:col-span-7 reveal">
+        <p class="eyebrow text-gold mb-5">Hotel Defanti</p>
+        <h2 class="font-display text-3xl lg:text-[2.9rem] leading-[1.08] font-medium text-ink">
+          Dal 1903 la famiglia Defanti gestisce il proprio locale a&nbsp;Lavorgo.
+        </h2>
+        <p class="mt-7 text-ink/75 text-lg leading-relaxed max-w-2xl">
+          Una grande tradizione sulla strada del San Gottardo. Alloggio, ristorante, negozio
+          alimentari e distributore di benzina: offerta completa per i viaggiatori di un tempo
+          e dei giorni nostri. Posizionato in media Leventina a 2 km dall'uscita autostradale
+          di Faido è un ideale punto di sosta per i turisti che dal nord Europa raggiungono l'Italia.
+        </p>
+        <p class="mt-5 text-ink/75 text-lg leading-relaxed max-w-2xl">
+          Ma è anche un punto di partenza perfetto per escursionisti e appassionati di diverse
+          attività sportive come boulder, arrampicata o rampichino. Il ristorante è rinomato per
+          una cucina creativa e fantasiosa che coniuga allo stesso tempo tradizione, regionalità
+          e innovazione.
+        </p>
+      </div>
+
+      <!-- Heritage seal + stats -->
+      <div class="lg:col-span-5 reveal" style="transition-delay:.12s">
+        <div class="rounded-2xl bg-notte text-cream p-8 lg:p-10 shadow-xl">
+          <div class="flex items-center gap-4 mb-7">
+            <div class="seal flex-shrink-0 w-20 h-20 rounded-full ring-2 ring-gold/60 flex flex-col items-center justify-center text-center">
+              <span class="font-display italic text-gold text-2xl leading-none">1903</span>
+              <span class="text-[.5rem] tracking-[.2em] mt-1 opacity-70">DAL</span>
+            </div>
+            <p class="font-display italic text-xl text-cream/90">Quattro generazioni<br>di ristoratori</p>
+          </div>
+          <div class="grid grid-cols-2 gap-y-7 gap-x-5">
+            <div><div class="font-display text-3xl text-goldlt">120+</div><div class="text-xs mt-1 opacity-70 tracking-wide">anni di tradizione</div></div>
+            <div><div class="font-display text-3xl text-goldlt">4</div><div class="text-xs mt-1 opacity-70 tracking-wide">generazioni di famiglia</div></div>
+            <div><div class="font-display text-3xl text-goldlt">2 km</div><div class="text-xs mt-1 opacity-70 tracking-wide">dall'uscita di Faido</div></div>
+            <div><div class="font-display text-3xl text-goldlt">Slow<br class="hidden">Food</div><div class="text-xs mt-1 opacity-70 tracking-wide">segnalati sulla guida</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= LA NOSTRA OFFERTA (tutto il business) ======================= -->
+<section class="bg-cream py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="eyebrow text-gold mb-4">Un'offerta completa</p>
+      <h2 class="font-display text-3xl lg:text-5xl font-medium text-ink">Tutto, da una sola famiglia</h2>
+      <p class="mt-5 text-ink/70 text-lg">Camere, cucina, eventi, sport e servizi — l'ospitalità della famiglia Defanti riunita sotto un solo tetto.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
+      <!-- Camere -->
+      <a href="#camere" class="group reveal block rounded-2xl overflow-hidden bg-paper shadow-sm hover:shadow-xl transition-all duration-500 ring-1 ring-line">
+        <div class="aspect-[4/3] overflow-hidden"><img src="img/camera.jpg" alt="Camera dell'Hotel Defanti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/></div>
+        <div class="p-7">
+          <p class="eyebrow text-gold mb-2">Hotel</p>
+          <h3 class="font-display text-2xl text-ink mb-2">Camere</h3>
+          <p class="text-ink/65 text-[.95rem] leading-relaxed">Camere con doccia/WC, TV satellitare, Wi-Fi gratuito e prima colazione a buffet.</p>
+          <span class="inline-block mt-4 text-azure font-semibold text-sm link-underline">Prezzi e prenotazione →</span>
+        </div>
+      </a>
+      <!-- Ristorante -->
+      <a href="#ristorante" class="group reveal block rounded-2xl overflow-hidden bg-paper shadow-sm hover:shadow-xl transition-all duration-500 ring-1 ring-line" style="transition-delay:.06s">
+        <div class="aspect-[4/3] overflow-hidden"><img src="img/ristorante.jpg" alt="Sala da pranzo del Ristorante Defanti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/></div>
+        <div class="p-7">
+          <p class="eyebrow text-gold mb-2">Gastronomia</p>
+          <h3 class="font-display text-2xl text-ink mb-2">Ristorante</h3>
+          <p class="text-ink/65 text-[.95rem] leading-relaxed">Cucina creativa fatta in casa che coniuga tradizione, regionalità e innovazione.</p>
+          <span class="inline-block mt-4 text-azure font-semibold text-sm link-underline">Menu e orari →</span>
+        </div>
+      </a>
+      <!-- Eventi -->
+      <a href="#eventi" class="group reveal block rounded-2xl overflow-hidden bg-paper shadow-sm hover:shadow-xl transition-all duration-500 ring-1 ring-line" style="transition-delay:.12s">
+        <div class="aspect-[4/3] overflow-hidden"><img src="img/eventi.jpg" alt="Serate ed eventi gastronomici al Defanti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/></div>
+        <div class="p-7">
+          <p class="eyebrow text-gold mb-2">Serate</p>
+          <h3 class="font-display text-2xl text-ink mb-2">Eventi</h3>
+          <p class="text-ink/65 text-[.95rem] leading-relaxed">Menu a tema, rassegne gastronomiche, matrimoni e feste private con musica e arte.</p>
+          <span class="inline-block mt-4 text-azure font-semibold text-sm link-underline">Prossimi eventi →</span>
+        </div>
+      </a>
+      <!-- Boulder -->
+      <a href="#boulder" class="group reveal block rounded-2xl overflow-hidden bg-paper shadow-sm hover:shadow-xl transition-all duration-500 ring-1 ring-line">
+        <div class="aspect-[4/3] overflow-hidden"><img src="img/boulder.jpg" alt="Boulder e arrampicata a Chironico, vicino al Defanti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/></div>
+        <div class="p-7">
+          <p class="eyebrow text-gold mb-2">Sport</p>
+          <h3 class="font-display text-2xl text-ink mb-2">Boulder &amp; Climbers</h3>
+          <p class="text-ink/65 text-[.95rem] leading-relaxed">A pochi passi da Chironico, uno dei complessi più apprezzati d'Europa. Offerte e Boulder Shop.</p>
+          <span class="inline-block mt-4 text-azure font-semibold text-sm link-underline">Offerta speciale →</span>
+        </div>
+      </a>
+      <!-- Bus e gruppi -->
+      <a href="#bus" class="group reveal block rounded-2xl overflow-hidden bg-paper shadow-sm hover:shadow-xl transition-all duration-500 ring-1 ring-line" style="transition-delay:.06s">
+        <div class="aspect-[4/3] overflow-hidden"><img src="img/storia.jpg" alt="L'Albergo Defanti, ideale per bus e gruppi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/></div>
+        <div class="p-7">
+          <p class="eyebrow text-gold mb-2">Comitive</p>
+          <h3 class="font-display text-2xl text-ink mb-2">Bus e gruppi</h3>
+          <p class="text-ink/65 text-[.95rem] leading-relaxed">Offerte di pernottamento e ristoro per comitive e gruppi, con parcheggio bus gratuito davanti all'albergo.</p>
+          <span class="inline-block mt-4 text-azure font-semibold text-sm link-underline">Richiedi un'offerta →</span>
+        </div>
+      </a>
+      <!-- Stazione di benzina / negozio -->
+      <a href="#benzina" class="group reveal block rounded-2xl overflow-hidden bg-paper shadow-sm hover:shadow-xl transition-all duration-500 ring-1 ring-line" style="transition-delay:.12s">
+        <div class="aspect-[4/3] overflow-hidden"><img src="img/accoglienza.jpg" alt="Servizi del Defanti: negozio e distributore di benzina AVIA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/></div>
+        <div class="p-7">
+          <p class="eyebrow text-gold mb-2">Servizi</p>
+          <h3 class="font-display text-2xl text-ink mb-2">Negozio &amp; Benzina AVIA</h3>
+          <p class="text-ink/65 text-[.95rem] leading-relaxed">Negozio alimentari e distributore Benzina e Diesel a prezzi concorrenziali con AVIA Swiss.</p>
+          <span class="inline-block mt-4 text-azure font-semibold text-sm link-underline">Scopri di più →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RISTORANTE ======================= -->
+<section id="ristorante" class="bg-notte text-cream py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <p class="eyebrow text-goldlt mb-5">Ristorante</p>
+        <h2 class="font-display text-3xl lg:text-[2.8rem] leading-[1.08] font-medium">
+          Il piacere della cucina fatta in casa… <span class="italic text-goldlt">naturalmente!</span>
+        </h2>
+        <p class="mt-7 text-cream/80 text-lg leading-relaxed">
+          Al Ristorante Defanti vi aspetta un'ampia sala da pranzo dall'atmosfera accogliente per
+          gustare in compagnia i sapori della buona cucina o per celebrare gli eventi importanti
+          con i vostri cari.
+        </p>
+        <ul class="mt-7 space-y-3 text-cream/85">
+          <li class="flex gap-3"><span class="text-gold mt-1">—</span><span>Menu a tema e su misura per le vostre feste private o eventi societari.</span></li>
+          <li class="flex gap-3"><span class="text-gold mt-1">—</span><span>Compleanni, cresime, battesimi, anniversari e altre feste di famiglia.</span></li>
+          <li class="flex gap-3"><span class="text-gold mt-1">—</span><span>Matrimoni con musica, divertimento e possibilità di pernottamento.</span></li>
+          <li class="flex gap-3"><span class="text-gold mt-1">—</span><span>Valorizziamo la stagione della selvaggina con prodotti Ticinesi.</span></li>
+          <li class="flex gap-3"><span class="text-gold mt-1">—</span><span>Rassegne gastronomiche e serate di beneficenza. Menu del giorno ricco e fresco.</span></li>
+        </ul>
+        <p class="mt-7 text-cream/70 italic">Contattateci per prenotare il vostro tavolo o la migliore offerta per il vostro menu.</p>
+      </div>
+      <div class="reveal order-1 lg:order-2" style="transition-delay:.1s">
+        <div class="relative">
+          <img src="img/ristorante.jpg" alt="La sala da pranzo del Ristorante Defanti" class="rounded-2xl shadow-2xl w-full object-cover aspect-[5/4]"/>
+          <img src="img/piatto.jpg" alt="Un piatto della cucina creativa Defanti" class="hidden sm:block absolute -bottom-8 -left-8 w-44 lg:w-56 rounded-xl shadow-2xl ring-4 ring-notte object-cover aspect-[4/3]"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Orari / Slow Food / À la carte -->
+    <div class="grid md:grid-cols-3 gap-6 mt-16 lg:mt-24">
+      <div id="orari" class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-7">
+        <p class="eyebrow text-goldlt mb-3">Orari di Apertura</p>
+        <p class="text-cream/85 leading-relaxed">Il ristorante è aperto <strong class="text-cream">dalle 16:30, dal Martedì al Sabato</strong>.</p>
+        <p class="mt-3 text-cream/70 text-sm">Per prenotazioni: <a href="tel:+41918651434" class="text-goldlt link-underline">091 865 14 34</a></p>
+      </div>
+      <div id="slowfood" class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-7" style="transition-delay:.06s">
+        <p class="eyebrow text-goldlt mb-3">Slow Food</p>
+        <p class="text-cream/85 leading-relaxed">Il nostro ristorante è segnalato sulla guida Slow-Food, della quale condividiamo pienamente la filosofia.</p>
+        <p class="mt-3 text-cream/70 text-sm">Contro l'appiattimento del Fast Food, per riscoprire la ricchezza e gli aromi delle cucine locali.</p>
+      </div>
+      <div id="alacarte" class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-7" style="transition-delay:.12s">
+        <p class="eyebrow text-goldlt mb-3">À la carte</p>
+        <p class="text-cream/85 leading-relaxed">Oltre al menu del giorno è sempre possibile scegliere le proposte della nostra carta.</p>
+        <p class="mt-3 text-cream/70 text-sm">Una carta che segue le stagioni e valorizza il territorio: piccola ma variata, essenziale e gustosa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CAMERE / PREZZI ======================= -->
+<section id="camere" class="bg-paper py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <div class="lg:col-span-5 reveal">
+        <p class="eyebrow text-gold mb-5">Camere · Prezzi</p>
+        <h2 class="font-display text-3xl lg:text-[2.8rem] leading-[1.08] font-medium text-ink">Il riposo del viaggiatore, dal 1903</h2>
+        <p class="mt-6 text-ink/75 text-lg leading-relaxed">
+          Camere con doccia/W.C., TV satellitare, Wi-Fi gratuito, asciugacapelli, compresa prima
+          colazione a buffet. Ideali per viaggiatori singoli, coppie e famiglie fino a 6 persone.
+        </p>
+        <img src="img/accoglienza.jpg" alt="Dettaglio di benvenuto nelle camere del Defanti" class="mt-8 rounded-2xl shadow-lg w-full object-cover aspect-[16/9]"/>
+      </div>
+
+      <div class="lg:col-span-7 reveal" style="transition-delay:.1s">
+        <div class="rounded-2xl bg-white ring-1 ring-line shadow-sm overflow-hidden">
+          <div class="px-7 py-5 bg-cream border-b border-line">
+            <p class="font-display text-xl text-ink">Listino prezzi <span class="text-ink/50 text-sm font-body">— colazione a buffet inclusa</span></p>
+          </div>
+          <table class="w-full text-left">
+            <tbody class="divide-y divide-line">
+              <tr><td class="px-7 py-4 text-ink/80">Camera singola con doccia/WC</td><td class="px-7 py-4 text-right font-display text-xl text-ink">CHF 80.–</td></tr>
+              <tr><td class="px-7 py-4 text-ink/80">Camera doppia con doccia/WC</td><td class="px-7 py-4 text-right font-display text-xl text-ink">CHF 125.–</td></tr>
+              <tr><td class="px-7 py-4 text-ink/80">Camera a 3 letti con doccia/WC</td><td class="px-7 py-4 text-right font-display text-xl text-ink">CHF 158.–</td></tr>
+              <tr class="bg-cream/40"><td class="px-7 py-2.5 text-xs uppercase tracking-widest text-gold font-semibold" colspan="2">Camere per famiglie con bambini</td></tr>
+              <tr><td class="px-7 py-4 text-ink/80">Camera a 4 letti con doccia/WC</td><td class="px-7 py-4 text-right font-display text-xl text-ink">CHF 178.–</td></tr>
+              <tr><td class="px-7 py-4 text-ink/80">Camera a 5 letti con doccia/WC</td><td class="px-7 py-4 text-right font-display text-xl text-ink">CHF 198.–</td></tr>
+            </tbody>
+          </table>
+          <div class="px-7 py-5 border-t border-line flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap gap-x-5 gap-y-1 text-xs text-ink/60">
+              <span>· Doccia / WC</span><span>· TV satellitare</span><span>· Wi-Fi gratuito</span><span>· Asciugacapelli</span><span>· Colazione a buffet</span>
+            </div>
+            <a href="#contatti" class="inline-flex rounded-full bg-azure px-5 py-2.5 text-sm font-bold text-white hover:bg-notte transition">Riservazione</a>
+          </div>
+        </div>
+
+        <!-- Bus e gruppi -->
+        <div id="bus" class="mt-6 rounded-2xl bg-notte text-cream p-7 lg:p-8">
+          <p class="eyebrow text-goldlt mb-3">Bus e gruppi</p>
+          <h3 class="font-display text-2xl mb-3">Offerte speciali per Gruppi e Comitive</h3>
+          <p class="text-cream/80 leading-relaxed">
+            L'Hotel Defanti collabora da anni con le più rinomate agenzie di viaggi e offre sensazionali
+            offerte di pernottamento e ristoro per comitive di escursionisti o gruppi di viaggiatori di
+            passaggio, anche per il pernottamento di una sola notte con mezza pensione (cena + camera +
+            colazione). Il parcheggio gratuito per il bus si trova davanti all'albergo.
+          </p>
+          <p class="mt-3 text-cream/70 italic text-sm">Contattateci per avere un'offerta dettagliata.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= BOULDER ======================= -->
+<section id="boulder" class="relative py-24 lg:py-32 text-cream overflow-hidden">
+  <img src="img/boulder.jpg" alt="Boulder e arrampicata nei boschi di Chironico, Ticino" class="absolute inset-0 w-full h-full object-cover" style="object-position:50% 45%;"/>
+  <div class="absolute inset-0" style="background:linear-gradient(100deg, rgba(11,33,56,.92) 0%, rgba(11,33,56,.72) 45%, rgba(11,33,56,.35) 100%);"></div>
+  <div class="relative mx-auto max-w-content px-5 lg:px-8">
+    <div class="max-w-2xl reveal">
+      <p class="eyebrow text-goldlt mb-5">Boulders &amp; Climbers</p>
+      <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] font-medium">A pochi passi da Chironico</h2>
+      <p class="mt-6 text-cream/85 text-lg leading-relaxed">
+        L'hotel Defanti si situa al centro di uno dei complessi europei più grandi e più apprezzati
+        dagli amanti della disciplina. Agli amanti del Boulder offriamo sensazionali offerte di
+        pernottamento nei mesi da Settembre a Maggio. Camere con doccia e WC, TV satellitare,
+        Free Wi-Fi e prima colazione con ricco buffet.
+      </p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+      <div class="reveal rounded-xl bg-white/10 backdrop-blur-sm ring-1 ring-white/15 p-6">
+        <p class="text-xs uppercase tracking-widest text-goldlt mb-2">Una sola notte</p>
+        <p class="font-display text-2xl">Fr. 50.–<span class="text-sm text-cream/70 font-body"> /pers. doppia</span></p>
+        <p class="font-display text-2xl mt-1">Fr. 60.–<span class="text-sm text-cream/70 font-body"> /pers. singola</span></p>
+      </div>
+      <div class="reveal rounded-xl bg-white/10 backdrop-blur-sm ring-1 ring-white/15 p-6" style="transition-delay:.06s">
+        <p class="text-xs uppercase tracking-widest text-goldlt mb-2">A partire da due notti</p>
+        <p class="font-display text-2xl">Fr. 40.–<span class="text-sm text-cream/70 font-body"> /pers. doppia</span></p>
+        <p class="font-display text-2xl mt-1">Fr. 50.–<span class="text-sm text-cream/70 font-body"> /pers. singola</span></p>
+      </div>
+      <div class="reveal rounded-xl bg-white/10 backdrop-blur-sm ring-1 ring-white/15 p-6" style="transition-delay:.12s">
+        <p class="text-xs uppercase tracking-widest text-goldlt mb-2">Crash-Pad</p>
+        <p class="font-display text-2xl">Fr. 10.–<span class="text-sm text-cream/70 font-body"> al giorno</span></p>
+        <p class="text-sm text-cream/75 mt-2">Possibilità di noleggio.</p>
+      </div>
+      <div class="reveal rounded-xl bg-gold/90 text-notte p-6" style="transition-delay:.18s">
+        <p class="text-xs uppercase tracking-widest mb-2 font-semibold">Boulder Shop</p>
+        <p class="leading-relaxed text-sm font-semibold">Possibilità di acquistare numerosi articoli sportivi nel nostro Boulder Shop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= EVENTI / RASSEGNA STAMPA ======================= -->
+<section id="eventi" class="bg-cream py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
+      <div>
+        <p class="eyebrow text-gold mb-4">Eventi &amp; Party gastronomici</p>
+        <h2 class="font-display text-3xl lg:text-5xl font-medium text-ink">Le nostre serate</h2>
+      </div>
+      <p class="max-w-md text-ink/70">Da 37 anni proponiamo menu gastronomici e serate uniche dove l'arte e il gusto si incontrano. Vi aspettiamo, <span class="italic">Sandra e Cesare</span>.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Event 1 -->
+      <article class="reveal rounded-2xl bg-paper ring-1 ring-line p-7 hover:shadow-xl transition-all duration-500 flex flex-col">
+        <div class="flex items-center gap-3 mb-4"><span class="font-display text-3xl text-gold">08</span><div class="text-xs leading-tight text-ink/60"><div>MAGGIO</div><div>2026</div></div></div>
+        <h3 class="font-display text-xl text-ink mb-2">Menu Gastronomico Maggio 2026</h3>
+        <p class="text-ink/70 text-sm leading-relaxed flex-1">Da 37 anni proponiamo un menu gastronomico nel mese di Maggio. Lasciatevi sorprendere dalla proposta «The Best Of»: un menu a sorpresa di 6 portate ispirato ai piatti che più vi sono piaciuti.</p>
+        <p class="mt-4 font-semibold text-azure">Menu di 6 portate · 75.–</p>
+      </article>
+      <!-- Event 2 -->
+      <article class="reveal rounded-2xl bg-paper ring-1 ring-line p-7 hover:shadow-xl transition-all duration-500 flex flex-col" style="transition-delay:.06s">
+        <div class="flex items-center gap-3 mb-4"><span class="font-display text-3xl text-gold">25</span><div class="text-xs leading-tight text-ink/60"><div>APRILE</div><div>2026</div></div></div>
+        <h3 class="font-display text-xl text-ink mb-2">Serata con musica e mentalismo</h3>
+        <p class="text-ink/70 text-sm leading-relaxed flex-1">Una cena con intrattenimento musicale del gruppo Corni d'Africa e un'esperienza di mentalismo coinvolgente con Daniele Er. Ricco menu a sorpresa di 4 portate, aperitivo, acqua e caffè inclusi.</p>
+        <p class="mt-4 font-semibold text-azure">4 portate · 80.– · ore 19:00</p>
+      </article>
+      <!-- Event 3 -->
+      <article class="reveal rounded-2xl bg-paper ring-1 ring-line p-7 hover:shadow-xl transition-all duration-500 flex flex-col" style="transition-delay:.12s">
+        <div class="flex items-center gap-3 mb-4"><span class="font-display text-3xl text-gold">11</span><div class="text-xs leading-tight text-ink/60"><div>APRILE</div><div>2026</div></div></div>
+        <h3 class="font-display text-xl text-ink mb-2">Cena a regola d'arte</h3>
+        <p class="text-ink/70 text-sm leading-relaxed flex-1">Con l'artista Tania Gottraux, un viaggio alla scoperta della fusione di un'opera d'arte, dalla cera al bronzo. Un menu speciale ispirato al percorso creativo, con vernissage dedicato a Gregor Lanz.</p>
+        <p class="mt-4 font-semibold text-azure">4 portate · 80.– · ore 19:00</p>
+      </article>
+      <!-- Event 4 -->
+      <article class="reveal rounded-2xl bg-paper ring-1 ring-line p-7 hover:shadow-xl transition-all duration-500 flex flex-col">
+        <div class="flex items-center gap-3 mb-4"><span class="font-display text-3xl text-gold">08</span><div class="text-xs leading-tight text-ink/60"><div>MARZO</div><div>2026</div></div></div>
+        <h3 class="font-display text-xl text-ink mb-2">Festa della Donna</h3>
+        <p class="text-ink/70 text-sm leading-relaxed flex-1">Una serata dove l'arte e il gusto si incontrano, impreziosita dal duo Irene Barbieri (violino) e Matteo Bassan (violoncello): un repertorio dedicato alle grandi compositrici della storia.</p>
+        <p class="mt-4 font-semibold text-azure">4 portate · 80.– · ore 19:00</p>
+      </article>
+      <!-- Event 5 -->
+      <article class="reveal rounded-2xl bg-paper ring-1 ring-line p-7 hover:shadow-xl transition-all duration-500 flex flex-col" style="transition-delay:.06s">
+        <div class="flex items-center gap-3 mb-4"><span class="font-display text-3xl text-gold">19</span><div class="text-xs leading-tight text-ink/60"><div>FEBBRAIO</div><div>2026</div></div></div>
+        <h3 class="font-display text-xl text-ink mb-2">Cena a bordo di un treno storico</h3>
+        <p class="text-ink/70 text-sm leading-relaxed flex-1">Una serata fuori dal tempo a bordo del treno storico Prestige Continental Express a Bellinzona, in un'atmosfera da «Il Grande Gatsby». Dress code: vintage / casual chic.</p>
+        <p class="mt-4 font-semibold text-azure">Menu completo · 70.–</p>
+      </article>
+      <!-- Event 6 — Hotel Party -->
+      <article class="reveal rounded-2xl bg-notte text-cream p-7 hover:shadow-xl transition-all duration-500 flex flex-col" style="transition-delay:.12s">
+        <div class="flex items-center gap-3 mb-4"><span class="font-display text-3xl text-goldlt">31</span><div class="text-xs leading-tight text-cream/60"><div>DICEMBRE</div><div>· party</div></div></div>
+        <h3 class="font-display text-xl mb-2">Hotel Party</h3>
+        <p class="text-cream/75 text-sm leading-relaxed flex-1">Festeggiate il nuovo anno con uno standing dinner itinerante nella cornice magica dell'Hotel Defanti: maghi, musicisti e attori. Dress-code: un tocco di rosso.</p>
+        <p class="mt-4 font-semibold text-goldlt">Tutto compreso · Fr. 160.–</p>
+      </article>
+    </div>
+
+    <div id="rassegna" class="mt-12 text-center reveal">
+      <p class="text-ink/60">Tutte le serate e gli articoli nella nostra <a href="#eventi" class="text-azure font-semibold link-underline">Rassegna stampa</a>. Prenotazione obbligatoria allo <a href="tel:+41918651434" class="text-azure font-semibold link-underline">091 865 14 34</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STORIA / DAL 1903 ======================= -->
+<section id="storia" class="bg-notte text-cream py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal">
+        <img src="img/famiglia.jpg" alt="Sandra e Cesare Defanti, oggi alla guida dell'albergo di famiglia" class="rounded-2xl shadow-2xl w-full object-cover aspect-[16/10]"/>
+        <p class="mt-3 text-sm text-cream/60 italic">Sandra e Cesare Defanti — la quarta generazione.</p>
+      </div>
+      <div class="reveal" style="transition-delay:.1s">
+        <p class="eyebrow text-goldlt mb-5">dal 1903 · Famiglia Defanti</p>
+        <h2 class="font-display text-3xl lg:text-[2.8rem] leading-[1.08] font-medium">Da Sobrio a Lavorgo, passando per Parigi e New York</h2>
+        <p class="mt-6 text-cream/80 text-lg leading-relaxed">
+          La passione per la ristorazione è la ricetta del successo della Famiglia Defanti, che da
+          oltre 115 anni gestisce l'omonimo albergo acquistato nel lontano 1903 dal bisnonno Luigi
+          al ritorno da Parigi. Da allora si sono susseguite 4 generazioni di ristoratori.
+        </p>
+        <p class="mt-4 text-cream/80 text-lg leading-relaxed">
+          Oggi Cesare gestisce l'albergo con la moglie Sandra, cuoca creativa e pronipote di quel
+          <span class="italic text-goldlt">Lorenzo Delmoinco</span>, il più grande ristoratore di New York
+          nella seconda metà dell'Ottocento. Il Ristorante Defanti offre sapori antichi rivisitati in
+          chiave moderna, in un'atmosfera unica.
+        </p>
+      </div>
+    </div>
+
+    <!-- timeline 4 generazioni -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+      <div class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-6">
+        <p class="font-display text-goldlt text-xl mb-1">Luigi</p>
+        <p class="text-cream/75 text-sm leading-relaxed">Il 19 maggio 1903 acquista la casa dell'attuale albergo per dedicarsi alla ristorazione con la moglie Paolina e i tre figli.</p>
+      </div>
+      <div class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-6" style="transition-delay:.06s">
+        <p class="font-display text-goldlt text-xl mb-1">Filippo</p>
+        <p class="text-cream/75 text-sm leading-relaxed">Amplia l'attività affiancando all'osteria un piccolo negozio e aprendo una stazione di benzina che diventerà anche garage.</p>
+      </div>
+      <div class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-6" style="transition-delay:.12s">
+        <p class="font-display text-goldlt text-xl mb-1">Luigi</p>
+        <p class="text-cream/75 text-sm leading-relaxed">Nel 1961 riatta completamente la casa: ristorante accogliente, camere con acqua corrente e riscaldamento centrale. Arrivano i primi bus di turisti.</p>
+      </div>
+      <div class="reveal rounded-xl bg-white/[.04] ring-1 ring-white/10 p-6" style="transition-delay:.18s">
+        <p class="font-display text-goldlt text-xl mb-1">Cesare</p>
+        <p class="text-cream/75 text-sm leading-relaxed">Gestisce l'Hotel dal 1988: tutte le camere con bagno privato, TV satellitare e WiFi. Con Sandra, cuoca diplomata, una gastronomia unica nel suo genere.</p>
+      </div>
+    </div>
+
+    <!-- Stazione di benzina -->
+    <div id="benzina" class="grid lg:grid-cols-12 gap-10 items-center mt-16 lg:mt-20 reveal">
+      <div class="lg:col-span-7">
+        <p class="eyebrow text-goldlt mb-4">Stazione di Benzina</p>
+        <h3 class="font-display text-2xl lg:text-3xl mb-4">Benzina e Diesel a prezzi concorrenziali</h3>
+        <p class="text-cream/80 leading-relaxed">
+          Costruita negli anni '20 da Filippo Defanti per rifornire le prime auto giunte in Leventina,
+          è una delle più vetuste stazioni di benzina ancora oggi in funzione. Posta sulla strada
+          cantonale, allora unica via tra il Nord e il Sud d'Europa, offriva rifornimento e garage.
+          Oggi, grazie alla collaborazione con AVIA Swiss, offre carburante a prezzi concorrenziali
+          con offerte per ditte e privati.
+        </p>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="rounded-xl bg-gold/90 text-notte p-7">
+          <p class="eyebrow mb-2">Partner</p>
+          <p class="font-display text-2xl mb-1">AVIA Swiss</p>
+          <p class="text-sm font-semibold leading-relaxed">Maggiore distributore di benzina in Svizzera. Offerte sensazionali per ditte e privati, direttamente al Defanti.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTATTI ======================= -->
+<section id="contatti" class="bg-paper py-20 lg:py-28">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+      <div class="reveal">
+        <p class="eyebrow text-gold mb-5">Contatti · Riservazioni</p>
+        <h2 class="font-display text-3xl lg:text-[2.8rem] leading-[1.08] font-medium text-ink">Dove siamo</h2>
+        <p class="mt-6 text-ink/75 text-lg leading-relaxed max-w-md">
+          Vi aspettiamo a Lavorgo, in media Leventina, a soli 2 km dall'uscita autostradale di Faido,
+          sulla storica strada del San Gottardo.
+        </p>
+        <div class="mt-8 space-y-5">
+          <div class="flex gap-4"><span class="text-gold font-display text-xl">⌖</span><div><p class="text-xs uppercase tracking-widest text-ink/50">Indirizzo</p><p class="text-ink text-lg">Via Petronilla 81, 6746 Lavorgo</p></div></div>
+          <div class="flex gap-4"><span class="text-gold font-display text-xl">☎</span><div><p class="text-xs uppercase tracking-widest text-ink/50">Telefono</p><a href="tel:+41918651434" class="text-ink text-lg link-underline">+41 91 865 14 34</a><p class="text-ink/50 text-sm">Fax +41 91 865 17 26</p></div></div>
+          <div class="flex gap-4"><span class="text-gold font-display text-xl">✉</span><div><p class="text-xs uppercase tracking-widest text-ink/50">Email</p><a href="mailto:defanti.hotel@bluewin.ch" class="text-ink text-lg link-underline">defanti.hotel@bluewin.ch</a></div></div>
+        </div>
+        <div class="mt-8 rounded-xl bg-cream ring-1 ring-line p-6">
+          <p class="font-display text-xl text-ink mb-1">Buoni regalo</p>
+          <p class="text-ink/70 text-sm leading-relaxed">L'idea regalo originale per ogni occasione! Viziate i vostri cari con gusto e regalate momenti di piacere.</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal" style="transition-delay:.1s">
+        <form class="rounded-2xl bg-white ring-1 ring-line shadow-sm p-7 lg:p-9" onsubmit="return false;">
+          <p class="font-display text-2xl text-ink mb-6">Richiesta di riservazione</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">Nome *</label><input type="text" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">Cognome *</label><input type="text" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">Telefono</label><input type="tel" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">E-mail *</label><input type="email" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">Arrivo</label><input type="date" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition text-ink/70" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">Partenza</label><input type="date" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition text-ink/70" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">N. Adulti</label><input type="number" min="0" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition" /></div>
+            <div><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">N. Bambini</label><input type="number" min="0" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition" /></div>
+          </div>
+          <div class="mt-4"><label class="block text-xs uppercase tracking-widest text-ink/50 mb-1.5">Messaggio</label><textarea rows="3" class="w-full rounded-lg border border-line bg-paper px-4 py-3 focus:border-azure focus:ring-1 focus:ring-azure outline-none transition"></textarea></div>
+          <button class="mt-6 w-full rounded-full bg-gold py-4 font-bold text-notte hover:bg-goldlt transition shadow-sm">Invia la richiesta</button>
+          <p class="mt-3 text-xs text-ink/40 text-center">Vi risponderemo al più presto. In alternativa, chiamateci allo 091 865 14 34.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="bg-ink text-cream/80 pt-16 pb-10">
+  <div class="mx-auto max-w-content px-5 lg:px-8">
+    <div class="grid md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+      <div class="md:col-span-4">
+        <div class="flex items-baseline gap-2.5 mb-4">
+          <span class="font-display text-2xl font-semibold text-cream">Defanti</span>
+          <span class="eyebrow text-[.6rem] text-goldlt">dal 1903</span>
+        </div>
+        <p class="text-sm leading-relaxed text-cream/60 max-w-xs">Hotel Ristorante a gestione familiare dal 1903. Una grande tradizione sulla strada del San Gottardo.</p>
+      </div>
+      <div class="md:col-span-3">
+        <p class="eyebrow text-goldlt mb-4">Navigazione</p>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#camere" class="hover:text-cream transition">Camere · Prezzi</a></li>
+          <li><a href="#ristorante" class="hover:text-cream transition">Ristorante</a></li>
+          <li><a href="#boulder" class="hover:text-cream transition">Boulder</a></li>
+          <li><a href="#eventi" class="hover:text-cream transition">Eventi · Rassegna stampa</a></li>
+          <li><a href="#storia" class="hover:text-cream transition">dal 1903</a></li>
+          <li><a href="#contatti" class="hover:text-cream transition">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-2">
+        <p class="eyebrow text-goldlt mb-4">Partner</p>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#benzina" class="hover:text-cream transition">Negozio Defanti</a></li>
+          <li><a href="#benzina" class="hover:text-cream transition">Benzina AVIA</a></li>
+          <li><a href="#" class="hover:text-cream transition">Meteo</a></li>
+          <li><a href="#" class="hover:text-cream transition">Leventina</a></li>
+          <li><a href="#" class="hover:text-cream transition">Link</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-3">
+        <p class="eyebrow text-goldlt mb-4">Contatto diretto</p>
+        <p class="text-sm leading-relaxed text-cream/70">Via Petronilla 81<br>6746 Lavorgo, Ticino</p>
+        <a href="tel:+41918651434" class="block mt-2 text-cream hover:text-goldlt transition">+41 91 865 14 34</a>
+        <a href="mailto:defanti.hotel@bluewin.ch" class="block text-sm text-cream/70 hover:text-goldlt transition">defanti.hotel@bluewin.ch</a>
+        <div class="flex gap-3 mt-5 text-xs tracking-widest">
+          <a href="#" class="text-goldlt">IT</a><a href="#" class="hover:text-cream">DE</a><a href="#" class="hover:text-cream">FR</a><a href="#" class="hover:text-cream">EN</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/45">
+      <p>© Hotel Ristorante Defanti — Lavorgo, Leventina, Ticino. All Rights Reserved.</p>
+      <p>Concept di redesign — <span class="text-cream/60">N design</span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header scroll state
+  const header = document.querySelector('[data-header]');
+  const brand = document.querySelector('[data-brand]');
+  const brandSub = document.querySelector('[data-brand-sub]');
+  const navLinks = document.querySelectorAll('.nav-link, [data-lang] a, [data-menu-btn]');
+  function setHeader(){
+    if (window.scrollY > 40){
+      header.classList.add('bg-paper','shadow-md');
+      header.classList.remove('text-cream');
+      header.style.color = '#15212E';
+    } else {
+      header.classList.remove('bg-paper','shadow-md');
+      header.style.color = '#F6F0E4';
+    }
+  }
+  setHeader(); window.addEventListener('scroll', setHeader, {passive:true});
+
+  // Mobile menu
+  const btn = document.querySelector('[data-menu-btn]');
+  const menu = document.querySelector('[data-mobile-menu]');
+  const b1=document.querySelector('[data-bar1]'),b2=document.querySelector('[data-bar2]'),b3=document.querySelector('[data-bar3]');
+  let open=false;
+  function toggle(force){
+    open = force!==undefined? force : !open;
+    menu.style.transform = open? 'translateX(0)' : 'translateX(100%)';
+    b1.style.transform = open? 'translateY(7px) rotate(45deg)' : '';
+    b2.style.opacity = open? '0' : '1';
+    b3.style.transform = open? 'translateY(-7px) rotate(-45deg)' : '';
+  }
+  btn.addEventListener('click', ()=>toggle());
+  document.querySelectorAll('.mob-link').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+
+  // Reveal: anything already in view at load shows immediately; rest animate on scroll.
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>{
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.92) el.classList.add('in');
+    else io.observe(el);
+  });
+  // Safety fallback: never leave content hidden if IO misbehaves.
+  window.addEventListener('load', ()=>setTimeout(()=>{
+    document.querySelectorAll('.reveal:not(.in)').forEach(el=>{
+      if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in');
+    });
+  }, 600));
+</script>
+</body>
+</html>
