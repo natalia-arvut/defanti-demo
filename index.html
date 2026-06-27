@@ -205,8 +205,8 @@ tailwind.config = {
 <!-- ======================= INTRO / OFFERTA COMPLETA ======================= -->
 <section id="offerta" class="bg-paper py-20 lg:py-28">
   <div class="mx-auto max-w-content px-5 lg:px-8">
-    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-      <div class="lg:col-span-7 reveal">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+      <div class="lg:col-span-7 reveal flex flex-col justify-center">
         <p class="eyebrow text-gold mb-5">Hotel Defanti</p>
         <h2 class="font-display text-3xl lg:text-[2.9rem] leading-[1.08] font-medium text-ink">
           Dal 1903 la famiglia Defanti gestisce il proprio locale a&nbsp;Lavorgo.
@@ -225,21 +225,28 @@ tailwind.config = {
         </p>
       </div>
 
-      <!-- Heritage seal + stats -->
-      <div class="lg:col-span-5 reveal" style="transition-delay:.12s">
-        <div class="rounded-2xl bg-notte text-cream p-8 lg:p-10 shadow-xl">
-          <div class="flex items-center gap-4 mb-7">
+      <!-- Heritage seal + stats — fills column height, aligned top & bottom with text -->
+      <div class="lg:col-span-5 reveal flex" style="transition-delay:.12s">
+        <div class="rounded-2xl bg-notte text-cream p-8 lg:p-10 shadow-xl w-full flex flex-col justify-between gap-8">
+          <div class="flex items-center gap-4">
             <div class="seal flex-shrink-0 w-20 h-20 rounded-full ring-2 ring-gold/60 flex flex-col items-center justify-center text-center">
               <span class="font-display italic text-gold text-2xl leading-none">1903</span>
               <span class="text-[.5rem] tracking-[.2em] mt-1 opacity-70">DAL</span>
             </div>
             <p class="font-display italic text-xl text-cream/90">Quattro generazioni<br>di ristoratori</p>
           </div>
+          <div>
+            <span class="rule-gold block w-16 mb-5"></span>
+            <p class="font-display italic text-lg text-cream/80 leading-relaxed">
+              «Da Sobrio a Lavorgo, passando per Parigi e New York» — la passione per la ristorazione
+              tramandata di generazione in generazione.
+            </p>
+          </div>
           <div class="grid grid-cols-2 gap-y-7 gap-x-5">
             <div><div class="font-display text-3xl text-goldlt">120+</div><div class="text-xs mt-1 opacity-70 tracking-wide">anni di tradizione</div></div>
             <div><div class="font-display text-3xl text-goldlt">4</div><div class="text-xs mt-1 opacity-70 tracking-wide">generazioni di famiglia</div></div>
             <div><div class="font-display text-3xl text-goldlt">2 km</div><div class="text-xs mt-1 opacity-70 tracking-wide">dall'uscita di Faido</div></div>
-            <div><div class="font-display text-3xl text-goldlt">Slow<br class="hidden">Food</div><div class="text-xs mt-1 opacity-70 tracking-wide">segnalati sulla guida</div></div>
+            <div><div class="font-display text-3xl text-goldlt">Slow Food</div><div class="text-xs mt-1 opacity-70 tracking-wide">segnalati sulla guida</div></div>
           </div>
         </div>
       </div>
@@ -376,18 +383,18 @@ tailwind.config = {
 <!-- ======================= CAMERE / PREZZI ======================= -->
 <section id="camere" class="bg-paper py-20 lg:py-28">
   <div class="mx-auto max-w-content px-5 lg:px-8">
-    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-      <div class="lg:col-span-5 reveal">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+      <div class="lg:col-span-5 reveal flex flex-col">
         <p class="eyebrow text-gold mb-5">Camere · Prezzi</p>
         <h2 class="font-display text-3xl lg:text-[2.8rem] leading-[1.08] font-medium text-ink">Il riposo del viaggiatore, dal 1903</h2>
         <p class="mt-6 text-ink/75 text-lg leading-relaxed">
           Camere con doccia/W.C., TV satellitare, Wi-Fi gratuito, asciugacapelli, compresa prima
           colazione a buffet. Ideali per viaggiatori singoli, coppie e famiglie fino a 6 persone.
         </p>
-        <img src="img/accoglienza.jpg" alt="Dettaglio di benvenuto nelle camere del Defanti" class="mt-8 rounded-2xl shadow-lg w-full object-cover aspect-[16/9]"/>
+        <img src="img/accoglienza.jpg" alt="Dettaglio di benvenuto nelle camere del Defanti" class="mt-8 rounded-2xl shadow-lg w-full object-cover flex-1 min-h-[220px]"/>
       </div>
 
-      <div class="lg:col-span-7 reveal" style="transition-delay:.1s">
+      <div class="lg:col-span-7 reveal flex flex-col" style="transition-delay:.1s">
         <div class="rounded-2xl bg-white ring-1 ring-line shadow-sm overflow-hidden">
           <div class="px-7 py-5 bg-cream border-b border-line">
             <p class="font-display text-xl text-ink">Listino prezzi <span class="text-ink/50 text-sm font-body">— colazione a buffet inclusa</span></p>
